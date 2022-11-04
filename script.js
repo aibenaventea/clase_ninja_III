@@ -24,8 +24,7 @@ class Ninja {
 class Sensei extends Ninja {
     wisdom = 10;
     constructor(nickName, health, speed, strength) {
-        super(nickName, health, speed, strength);
-        this.nickName = nickName;
+        super(nickName);
         this.health = health;
         this.speed = speed;
         this.strength = strength;
@@ -39,11 +38,12 @@ class Sensei extends Ninja {
     }
 }
 
-const ninjaSensei = new Sensei("Tonkotsu Master", 200, 10, 10)
+let ninjaSensei = new Sensei("Tonkotsu Master", 200, 10, 10)
 
 ninjaSensei.speakWisdom();
 
 ninjaSensei.showSenseiStats();
 
+// console.log(ninjaSensei);
 
 
